@@ -32,3 +32,5 @@ systemctl start shadowsocks
 
 `systemctl status shadowsocks -l`
 
+## Client
+https://github.com/shadowsocks/shadowsocks-windows/releases
