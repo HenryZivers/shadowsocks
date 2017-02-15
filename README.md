@@ -3,9 +3,11 @@
 ## Environment
 
 * CentOS 7
+* Ubuntu 16.04
 
 ## Installation
 
+* CentOS 7
 ```
 yum install epel-release
 yum install python-setuptools m2crypto supervisor
@@ -13,19 +15,39 @@ easy_install pip
 pip install shadowsocks
 ```
 
+* Ubuntu 16.04
+```
+apt install python-pip
+apt install python-m2crypto
+pip2 install shadowsocks
+```
+
 ## Configuration
 
+* CentOS 7
 ```
 vim /etc/shadowsocks.json
 vim /etc/systemd/system/shadowsocks.service
 vim /etc/supervisord.conf
 ```
 
+* Ubuntu 16.04
+```
+vim /etc/shadowsocks.json
+```
+
 ## Enable shadowsocks service
 
+* CentOS 7
 ```
 systemctl enable shadowsocks
 systemctl start shadowsocks
+```
+
+* Ubuntu 16.04
+```
+ssserver -c /etc/shadowsocks.json -d start
+ssserver -c /etc/shadowsocks.json -d stop
 ```
 
 ## Check
@@ -68,3 +90,6 @@ Choose the TCP congestion algorithm for large latency and high throughput.
 ```
 vim /etc/sysctl.conf
 ```
+
+## Ref
+https://github.com/shadowsocks/shadowsocks/wiki
