@@ -1,5 +1,3 @@
-# /etc/systemd/system/shadowsocks.service
-
 [Unit]
 Description=Shadowsocks
 
