@@ -1,14 +1,10 @@
-# /etc/shadowsocks.json
-
 {
-    "server":"0.0.0.0",
-    "local_address":"127.0.0.1",
+    "server":"my_server_ip",
+    "server_port":8388,
+    "local_address": "127.0.0.1",
     "local_port":1080,
-    "port_password":{
-    "10000":"yourpassword",
-    "10001":"yourpassword",
-    "10002":"yourpassword"
-    },
+    "password":"mypassword",
     "timeout":300,
-    "method":"aes-256-cfb"
+    "method":"aes-256-cfb",
+    "fast_open": false
 }
