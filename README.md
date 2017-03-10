@@ -9,17 +9,14 @@
 
 * CentOS 7
 ```
-yum install epel-release
-yum install python-setuptools m2crypto supervisor
-easy_install pip
+yum install epel-release python-pip m2crypto supervisor
 pip install shadowsocks
 ```
 
 * Ubuntu 16.04
 ```
-apt install python-pip
-apt install python-m2crypto
-pip2 install shadowsocks
+apt install python-pip python-m2crypto supervisor
+pip install shadowsocks
 ```
 
 ## Configuration
@@ -28,7 +25,7 @@ pip2 install shadowsocks
 ```
 vim /etc/shadowsocks.json
 vim /etc/systemd/system/shadowsocks.service
-vim /etc/supervisord.conf
+vim /etc/supervisord.d/shadowsocks.ini
 ```
 
 * Ubuntu 16.04
