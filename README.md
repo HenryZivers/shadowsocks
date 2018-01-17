@@ -52,5 +52,5 @@ started
 ```
 
 ## 链接
-[Shadowsocks Wiki](https://github.com/shadowsocks/shadowsocks/wiki)
-[Shadowsocks Client](https://github.com/shadowsocks/shadowsocks-windows/releases)
+* [Shadowsocks Wiki](https://github.com/shadowsocks/shadowsocks/wiki)
+* [Shadowsocks Client](https://github.com/shadowsocks/shadowsocks-windows/releases)
