@@ -20,7 +20,7 @@ yum install git
 ```
 拉取脚本
 ```
-git clone https://github.com/cnzh/shadowsocks deploy-ssserver
+git clone https://github.com/cnzh/deploy-ssserver
 cd deploy-ssserver/
 ```
 **执行脚本1**
