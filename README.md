@@ -16,7 +16,7 @@
 
 安装git服务
 ```
-yum install git
+yum install git -y
 ```
 拉取脚本
 ```
