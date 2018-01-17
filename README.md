@@ -11,6 +11,9 @@
 3. deploy-shadowsocks.json #SSServer配置文件
 
 ## 使用方法
+
+**获取脚本**
+
 安装git服务
 ```
 yum install git
@@ -20,7 +23,8 @@ yum install git
 git clone https://github.com/cnzh/shadowsocks deploy-ssserver
 cd deploy-ssserver/
 ```
-执行脚本1
+**执行脚本1**
+
 ```
 sh deploy-ssserver-1.sh
 ```
@@ -31,7 +35,9 @@ sh deploy-ssserver-1.sh
 ```
 cd deploy-ssserver/
 ```
-修改ssserver配置文件`deploy-shadowsocks.json`。将其中的`port_password`端口密钥对按自己的习惯配置。例如
+**修改SSServer配置文件**
+
+修改`deploy-shadowsocks.json`，将其中的`port_password`端口密钥对按自己的习惯配置。例如
 ```
 "port_password": {
     "8381": "foobar1",
@@ -40,7 +46,8 @@ cd deploy-ssserver/
     "8384": "foobar4"
 },
 ```
-执行脚本2
+**执行脚本2**
+
 ```
 sh deploy-ssserver-2.sh
 ```
