@@ -21,5 +21,11 @@ pip install shadowsocks
 #Configure SSServer
 mv ./deploy-shadowsocks.json /etc/shadowsocks.json
 
+#Unable iptables
+iptables -L -n
+iptables -F
+
 #Start Service
 ssserver -c /etc/shadowsocks.json -d start
+
+
